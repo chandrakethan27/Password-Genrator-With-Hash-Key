@@ -1,6 +1,5 @@
 import random
 from tkinter import * 
-# pip install pyperclip
 root = Tk()
 root.geometry("1000x500")
 root.configure(bg='#73b9d7')
