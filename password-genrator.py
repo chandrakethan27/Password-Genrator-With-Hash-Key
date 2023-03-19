@@ -72,11 +72,8 @@ def decrypter():
             elif d[i] == 'i':
                 binary+='0'
     binary_int = int(binary, 2)
-    # Getting the byte number
     byte_number = (binary_int.bit_length() + 7 )// 8
-    # Getting an array of bytes
     binary_array = binary_int.to_bytes(byte_number, "big")
-    # Converting the array into ASCII text
     ascii_text = str(binary_array.decode())
     decrypt.set(ascii_text)
     file1 = open('decrypted.txt', 'w')
